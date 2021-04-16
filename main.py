@@ -15,19 +15,18 @@ def main():
 
     # for i in range(2):
     #     ran = []
-    av = 0
+    # av = 0
 
     for i in range(4):
         ran = unique_rand(0, 5, 5)
         # print("Num", ran)
         rand = ran[i]
-        av = rand
         first_key = get_nth_key(mrdare["subjects"], rand)
         print(first_key, mrdare["subjects"][first_key])
 
         # ran = rand[i]
 
-    val = mrdare["subjects"][first_key]
+    # val = mrdare["subjects"][first_key]
     # print(val)
 
 
@@ -35,13 +34,6 @@ def get_first_key(dictionary):
     for key in dictionary:
         return key
     raise IndexError
-
-
-data = []
-
-
-# print(data)
-
 
 def get_nth_key(dictionary, n=0):
     if n < 0:
